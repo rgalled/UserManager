@@ -1,0 +1,519 @@
+/* Estilo básico para la plantilla */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Color de fondo claro */
+    color: #343a40; /* Color de texto oscuro */
+}
+
+/* Estilos generales para contenedores */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Estilo para el header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+header .mt-3 {
+    margin-top: 20px;
+}
+
+/* Botón de Verificar Cuenta y Cerrar Sesión */
+.btn-logout,
+.btn-warning {
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-logout {
+    background-color: #dc3545;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-logout:hover {
+    background-color: #c82333;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+/* Main Content */
+main.container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Flexbox layout para los botones en el header */
+header > div {
+    margin-top: 20px;
+}
+
+/* Estilo para los botones */
+header .btn-logout, header .btn-warning {
+    margin: 10px;
+}
+
+/* Estilo de las alertas (mensaje de cuenta no verificada) */
+h3 {
+    font-size: 1.4rem;
+    color: #f1c40f;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header {
+        text-align: left;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .btn-logout, .btn-warning {
+        font-size: 0.9rem;
+        padding: 6px 15px;
+    }
+
+    main.container {
+        padding: 0 10px;
+    }
+}
+
+
+.navbar {
+    background-color: #007bff; /* Color azul para la barra de navegación */
+    color: #fff;
+    padding: 1rem;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffd700; /* Color dorado al pasar el ratón */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    background-color: #343a40; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #ffd700; /* Enlaces dorados */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+}
+
+/* Estilo para formularios */
+form input, form select, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.login-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Caja del formulario de login */
+.login-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    border: 2px solid #ccc; /* Borde gris */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* Título del formulario */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Estilo para los campos de entrada */
+.textbox {
+    margin-bottom: 20px;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Estilo para el botón de login */
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Efecto de foco en los campos de texto */
+.textbox input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.error-message {
+    background-color: #ffdddd; /* Rojo claro */
+    color: #d8000c; /* Rojo oscuro */
+    border: 1px solid #d8000c;
+    padding: 15px;
+    width: 50%;
+    margin: 20px auto; /* Centrar horizontalmente */
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+/* Estilos para el formulario general */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo general para la tabla */
+.table-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2.mb-4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo para la tabla de usuarios */
+table.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table.user-table th, table.user-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table.user-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+table.user-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table.user-table .no-data {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    font-style: italic;
+}
+
+/* Estilo para los botones */
+button, a.btn-edit, a.btn-view, button.btn-delete {
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+a.btn-edit {
+    background-color: #4caf50;
+    color: white;
+    margin-right: 5px;
+}
+
+a.btn-view {
+    background-color: #007bff;
+    color: white;
+    margin-right: 5px;
+}
+
+button.btn-delete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button.btn-delete:hover, a.btn-edit:hover, a.btn-view:hover {
+    opacity: 0.8;
+}
+
+/* Estilo para el botón Nuevo */
+button.btn-create {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button.btn-create:hover {
+    background-color: #0056b3;
+}
+
+
+h2.mb-4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo para los mensajes de error */
+.alert.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.alert.alert-danger ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.alert.alert-danger li {
+    list-style-type: circle;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Estilo para los campos del formulario */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+select {
+    font-size: 14px;
+}
+
+/* Estilo para el botón */
+button.btn-save {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button.btn-save:hover {
+    background-color: #0056b3;
+}
+
+button.btn-save:focus {
+    outline: none;
+}
+
+/* Añadir un poco de espacio entre los campos */
+input, select {
+    margin-bottom: 15px;
+}
+
+
+/* Botón de logout */
+.btn-logout {
+    background-color: #e74c3c; /* Color de fondo rojo */
+    color: white; /* Texto en blanco */
+    padding: 10px 20px; /* Relleno alrededor del texto */
+    font-size: 16px; /* Tamaño de fuente */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    display: inline-block; /* Hacer que se comporte como un botón */
+    cursor: pointer; /* Cambiar el cursor a mano al pasar por encima */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar color */
+}
+
+.btn-logout:hover {
+    background-color: #c0392b; /* Color más oscuro de fondo al pasar el ratón */
+}
+
+/* Botón de ingreso */
+.btn-new {
+    background-color: #3498db; /* Color de fondo azul */
+    color: white; /* Texto en blanco */
+    padding: 10px 20px; /* Relleno alrededor del texto */
+    font-size: 16px; /* Tamaño de fuente */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    display: inline-block; /* Hacer que se comporte como un botón */
+    cursor: pointer; /* Cambiar el cursor a mano al pasar por encima */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar color */
+}
+
+.btn-new:hover {
+    background-color: #2980b9; /* Color más oscuro de fondo al pasar el ratón */
+}
+
